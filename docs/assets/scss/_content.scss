@@ -2,16 +2,14 @@
 // Content guidelines
 //
 
-.feature-item {
-  padding-top: 60px;
-  color: $gray;
-  text-align: center;
-  h3 {
-    color: $gray-dark;
+.about-that {
+  h2 {
+    font-size: 21px;
+    font-weight: normal;
   }
-  .icon {
-    width: 100px;
-    padding: 1.5rem 0;
-    fill: $tm-brand;
+  p {
+    padding-right: .5rem;
+    line-height: 1.5;
+    color: #555;
   }
 }

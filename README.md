@@ -9,7 +9,7 @@
       \/_________/      The Best of Both Worlds!
 
 ```
-> Github [Primer](http://primercss.io/) framework built with [Bootstrap](https://getbootstrap.com/). Life does not get better than that!
+> Github [Primer](http://primercss.io/) framework with a 'B', built with [Bootstrap 4](https://getbootstrap.com/). Life does not get better than that!
 
 ### [Brimer](http://websemantics.github.io/brimer)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/brimer/issues)
 

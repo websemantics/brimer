@@ -3,17 +3,13 @@
 //
 
 .tm-footer {
-  padding: 4rem 0;
-  margin-top: 4rem;
-  font-size: 85%;
-  color: $tm-footer-color;
-  text-align: center;
-  background-color: $tm-footer-background;
+  padding-bottom: 3rem;
+  margin-top: 2.5rem;
+  line-height: 1.75;
+  color: #7a7a7a;
 
-  .icon {
-    width: 16px;
-    vertical-align: text-bottom;
-    stroke: $tm-red-color;
+  hr {
+    padding-top: 1.75rem;
   }
 
   a {
@@ -21,28 +17,11 @@
     color: $gray;
 
     &:hover {
-      color: $tm-brand;
+      color: $br-brand;
     }
-  }
-
-  p {
-    margin-bottom: 0;
   }
 
   @include media-breakpoint-up(sm) {
     text-align: left;
-  }
-}
-
-.tm-footer-links {
-  padding-left: 0;
-  margin-bottom: 1rem;
-
-  li {
-    display: inline-block;
-
-    + li {
-      margin-left: 1rem;
-    }
   }
 }

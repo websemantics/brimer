@@ -15,7 +15,7 @@
 //   Doing so gives us access to the same core utilities provided by Bootstrap.
 //   For example, consistent media queries through those mixins.
 //
-// - Bootstrap's **docs variables** are prefixed with `$tm-`.
+// - Bootstrap's **docs variables** are prefixed with `$br-`.
 //   These custom colors avoid collision with the components Bootstrap provides.
 //
 // - Classes are prefixed with `.bd-`.
@@ -32,16 +32,24 @@
 // Flat colors: http://www.flatdesigncolors.com/
 // Color calculator: http://razorjam.github.io/sasscolourfunctioncalculator/
 
-$tm-brand: #41A85F;
-$tm-brand-light: lighten(desaturate(adjust-hue($tm-brand, 0.0130), 0.3554), 9.8039);
-$tm-brand-text: lighten(desaturate(adjust-hue($tm-brand, 0.4574), 0.8658), 39.6078);
-$tm-brand-border: lighten(saturate(adjust-hue($tm-brand, -0.8759), 0.6926), 49.8039);
-$tm-footer-background: #2a2730;
-$tm-footer-color: #99979c;
-$tm-red-color: #E25041;
+$br-brand: #4078c0;
+$br-red-color: #E25041;
+
+body {
+    font-family: "Helvetica Neue",Helvetica,arial, nimbussansl,liberationsans,freesans,clean,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+}
+
+.container {
+    width: auto;
+    max-width: 1020px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 // Load docs components
 @import "brand";
-@import "masthead";
+@import "navbar";
+@import "jumbotron";
 @import "content";
 @import "footer";
