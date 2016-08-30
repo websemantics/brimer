@@ -3,10 +3,10 @@
     <a class="navbar-brand" href="{{ site.baseurl }}"><img class="svg" src="{{ site.baseurl }}/assets/brand/brimer.svg" alt="Brimer" width="32" height="32"> Brimer</a>
     <ul class="nav navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Docs</a>
+        <a class="nav-link {% if page.title contains 'Scaffolding' %}active{% endif %}" href="{{ site.baseurl }}/docs">Docs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link {% if page.title contains 'About' %}active{% endif %}" href="{{ site.baseurl }}/about">About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/websemantics/brimer" target="_blank">GitHub</a>
