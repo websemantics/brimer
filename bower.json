@@ -1,0 +1,33 @@
+{
+  "name": "brimer",
+  "description": "A powerful CSS framework boilerplate and Bootstrap 4 themes builder.",
+  "keywords": [
+    "css",
+    "js",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "http://websemantics.github.io/brimer",
+  "license": "MIT",
+  "moduleType": "globals",
+  "main": [
+    "scss/brimer.scss",
+    "dist/js/brimer.js"
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "composer.json",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 3",
+    "tether": "^1.1.1"
+  }
+}

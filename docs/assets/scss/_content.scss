@@ -1,0 +1,17 @@
+//
+// Content guidelines
+//
+
+.feature-item {
+  padding-top: 60px;
+  color: $gray;
+  text-align: center;
+  h3 {
+    color: $gray-dark;
+  }
+  .icon {
+    width: 100px;
+    padding: 1.5rem 0;
+    fill: $tm-brand;
+  }
+}

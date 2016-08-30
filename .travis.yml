@@ -1,0 +1,33 @@
+script: npm run deploy
+sudo: required
+language: node_js
+git:
+  depth: 10
+node_js:
+- '4'
+- '6'
+before_install:
+- export PATH=$(python -c 'from sys import argv;from collections import OrderedDict
+  as od;print(":".join(od((p,None) for p in argv[1].split(":") if p.startswith("/")).keys()))'
+  "$PATH")
+- rvm install 2.2
+- rvm use 2.2 --fuzzy
+- npm install -g npm@3
+- export TRAVIS_COMMIT_MSG="$(git log --format=%B --no-merges -n 1)"
+- echo "$TRAVIS_COMMIT_MSG" | grep '\[skip validator\]'; export TWBS_DO_VALIDATOR=$?;
+  true
+- echo "$TRAVIS_COMMIT_MSG" | grep '\[skip sauce\]'; export TWBS_DO_SAUCE=$?; true
+- if [ "$TRAVIS_REPO_SLUG" = twbs-savage/bootstrap ]; then export TWBS_DO_VALIDATOR=0;
+  fi
+install:
+- bundle install --deployment --jobs=3
+- cp grunt/npm-shrinkwrap.json ./
+- npm install
+cache:
+  directories:
+  - node_modules
+  - vendor/bundle
+env:
+  global:
+  - GH_REF: github.com/websemantics/brimer.git
+  - secure: svdTob3PhYzAKkiH304KoGSz36fnvo/LT3smPixMeB9EncpraobTf36GnGv7lN1mgkOWBZJdkJXa6TbvmIV8fVz2SuBJYDZZ99qL0/rLuAbGEHRKJb3cFRrZGbbKvZzTd1u1wDUVvL+L8LxV4LyBsNU3r/chhWI5JKVsk4+y7FBDmP3zpRZPJQQvF3jPDX/YkXOq+VXD8dmQj5XIfhx8yuvVu71ZQcMXd2bVTeUw1qb+ICwzMZU8b/ViZr+f5bLJ0rxy0hoRgD3w7gzEwzrQPSd+ilfAwGOgeUuAmOm1M+BvPUgiQ/a71t1VWDa6mQSrdnjCZZSC/PaCm8jdUQoHoD9WhJb7GrvnSmCeoclN30hkmU/4yR+aZDcBkzIHvhlMs65lhABmac9b7+SX6tAA+aaJwgauiBgsbl5jz8PH5wjLtC1cQQoCqClb/AwDEAUhkGmO814CDCdV3i4GAMk4HGzPplBIKWRXyP/zpaJpV/ah76I3t8wdV93d2kzBpH9tu5RmuKQBRmFCVLpbGR+I5FTOyCOmPC5m6lsuK3jOVxaeXbGBq8i1QVqUYBQTtP1rku+OEobkAdaBq6wTaaCqTlW4wXlXFTWwUpLr4M81wRAdSvzbRjeW9a6M8olw5xF6D2pO4VA1d2y5pM06uomWdJ0SELq9c32ABDm5cjIPC2k=
