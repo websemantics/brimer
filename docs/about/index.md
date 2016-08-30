@@ -11,7 +11,7 @@ title: About &middot; Brimer
 
   <h3>What and why</h3>
 
-  <p>Brimer is built after Primer, GitHub’s internal CSS framework. The idea is to have the cake and eat it too by combining Github attractive styles and Bootstrap extensive feature list.</p>
+  <p>Brimer is a CSS Framework built after <a href="http://primercss.io/">Primer</a>, GitHub’s internal CSS framework. The idea is to have a cake and eat it too by combining Github attractive clean style and Bootstrap extensive feature list.</p>
 
   <h3>Browser support</h3>
 

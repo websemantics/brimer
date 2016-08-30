@@ -1,15 +1,16 @@
 ```
         __________
-       /_________/      ______      _
-      /\        /\      | ___ \    (_)   
-     /  \  ____/__\__   | |_/ /_ __ _ _ __ ___   ___ _ __
-    /    \/_________/   | ___ \ '__| | '_ ` _ \ / _ \ '__|    
-    \    /         /    | |_/ / |  | | | | | | |  __/ |   
-     \  /         /     |____/|_|  |_|_| |_| |_|\___|_|   
-      \/_________/      The Best of Both Worlds!
+       /_________/      ______        _
+      /\        /\      | ___ \      (_)   
+     /  \  ____/__\__   | |_/ / _ __  _  _ __ ___    ___  _ __
+    /    \/_________/   | ___ \| '__|| || '_ ` _ \  / _ \| '__|    
+    \    /         /    | |_/ /| |   | || | | | | ||  __/| |   
+     \  /         /     |____/ |_|   |_||_| |_| |_| \___||_|   
+      \/_________/      Github Primer CSS toolkit with a 'B'
 
 ```
-> Github [Primer](http://primercss.io/) framework with a 'B', built with [Bootstrap 4](https://getbootstrap.com/). Life does not get better than that!
+
+> Brimer is a CSS Framework built after [Primer](http://primercss.io/), GitHub’s internal CSS framework. The idea is to have a cake and eat it too by combining Github attractive clean style and Bootstrap extensive feature list. Life does not get better than that!
 
 ### [Brimer](http://websemantics.github.io/brimer)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/brimer/issues)
 
@@ -21,6 +22,8 @@
 
 
 ## Resource
+
+[Primer](http://primercss.io/), the CSS toolkit and guidelines that power GitHub..
 
 [Bootstrap 4](http://v4-alpha.getbootstrap.com/), the most popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web.
 
