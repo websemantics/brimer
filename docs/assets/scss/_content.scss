@@ -13,3 +13,20 @@
     color: #555;
   }
 }
+
+.about {
+  h1.page-title {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
