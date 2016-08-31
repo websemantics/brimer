@@ -65,23 +65,11 @@ brimer/
 |   ├── getting-started.html
 |   └── template.html
 └── scss/
-    ├── _alert.scss
-    ├── _animation.scss
-    ├── _breadcrumb.scss
-    ├── . . . . . .
-    ├── . . . . . .
-    ├── . . . . . .
-    ├── _tags.scss
-    ├── _tooltip.scss
-    ├── _variables.scss
-    ├── bootstrap-grid.scss
-    ├── brimer-flex.scss
-    ├── brimer-reboot.scss
-    └── brimer.scss
+    └── primer
 
 ```
 
-The css styles for Brimer are all stored in `scss` folder while compiled and minified CSS and JS are in `dist`.
+All css override styles for Bootstrap and Primer are stored in `scss` and `scss/primer` folders respectively, while compiled and minified CSS and JS are in `dist` folder.
 
 
 ## Install
