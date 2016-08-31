@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About &middot; Brimer
+title: About
 ---
 
 Learn more about this styleguide, particularly how it’s built and who maintains it.
