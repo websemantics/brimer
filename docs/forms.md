@@ -1,5 +1,5 @@
 ---
-title: Buttons
+title: Forms
 layout: docs
 group: components
 ---
