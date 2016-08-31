@@ -10,7 +10,7 @@
 
 ```
 
-> Brimer is a CSS Framework built after [Primer](http://primercss.io/), GitHub’s internal CSS framework. The idea is to have a cake and eat it too by combining Github attractive clean style and Bootstrap extensive feature list. Life does not get better than that!
+> Brimer is a CSS Framework built after [Primer](http://primercss.io/), GitHub’s internal CSS framework. The idea is to have a cake and eat it too by combining Github attractive clean style and Bootstrap extensive feature list. A marriage made in heaven!
 
 ### [Brimer](http://websemantics.github.io/brimer)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/brimer/issues)
 
