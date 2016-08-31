@@ -1,9 +1,6 @@
-<footer class="tm-footer">
-  <div class="container">
-    <hr/>
-    Built with love by <a href="http://github.com/websemantics" target="_blank">Web Semantics, Inc.</a><br/>
+<footer class="footer">
+  Built with love by <a href="http://github.com/websemantics" target="_blank">Web Semantics, Inc.</a><br/>
     Created and maintained by the CSS team at Web Semantics, Inc. <strong>Currently v{{ site.current_version }}</strong>.
-  </div>
 </footer>
 
 <script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
@@ -28,3 +25,13 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="{{ site.baseurl }}/assets/js/ie-emulation-modes-warning.js"></script>
+
+<script src="{{ site.baseurl }}/assets/js/vendor/anchor.min.js"></script>
+<script>
+  var selector = '.markdown-body > h2, .markdown-body > h3';
+  anchors.options = {
+    placement: 'left',
+    class: 'anchor-link'
+  };
+  anchors.add(selector);
+</script>

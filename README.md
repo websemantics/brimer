@@ -14,8 +14,72 @@
 
 ### [Brimer](http://websemantics.github.io/brimer)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/brimer/issues)
 
+> GitHubby who doesn't love Github look and feel.
 
-## Getting Started
+## Quick Start
+
+Three quick start options are available:
+
+- [Download the latest release](https://github.com/websemantics/brimer/archive/1.0.0.zip).
+- Clone the repo: `git clone https://github.com/websemantics/brimer.git`.
+- Install with [Bower](http://bower.io): `bower install brimer`.
+- Install with [nop](https://www.npmjs.com/): `npm install brimer`.
+
+Run `npm install` to install dependencies.
+
+
+### What's included
+
+Within the download you'll find the following directories and files for the framework and the docs, logically grouping common assets and providing both compiled and minified variations,
+
+```
+brimer/
+├── dist/
+|   ├── css/
+│   |   ├── brimer.css
+│   |   ├── brimer.css.map
+│   |   └── brimer.min.css
+│   |   └── brimer.min.css.map
+|   ├── js/
+│   |   ├── brimer.js
+│   |   └── brimer.min.js
+├── js/
+|   ├── dist/
+│   |   ├── custom.js
+│   |   └── custom.min.js
+|   ├── src/
+│   |   ├── custom.js
+│   |   └── util.js
+├── docs/
+|   ├── dist/
+|   ├── assets/
+│   |   ├── brand
+│   |   ├── css
+│   │   |   ├── docs.css
+│   │   |   └── docs.min.css.map
+│   |   ├── js
+│   |   └── scss
+|   ├── components.html
+|   ├── getting-started.html
+|   └── template.html
+└── scss/
+    ├── _alert.scss
+    ├── _animation.scss
+    ├── _breadcrumb.scss
+    ├── . . . . . .
+    ├── . . . . . .
+    ├── . . . . . .
+    ├── _tags.scss
+    ├── _tooltip.scss
+    ├── _variables.scss
+    ├── bootstrap-grid.scss
+    ├── brimer-flex.scss
+    ├── brimer-reboot.scss
+    └── brimer.scss
+
+```
+
+The css styles for Brimer are all stored in `scss` folder while compiled and minified CSS and JS are in `dist`.
 
 
 ## Install

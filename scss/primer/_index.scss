@@ -1,0 +1,65 @@
+// Primer master file
+//
+// Imports all Primer files in their intended order for easy mass-inclusion.
+// Should you need specific files, you can easily use separate `@import`s.
+
+// Global requirements
+
+// variables
+@import "../../node_modules/primer-support/lib/variables";
+
+// mixins
+@import "../../node_modules/primer-support/lib/mixins/typography";
+@import "../../node_modules/primer-support/lib/mixins/layout";
+@import "../../node_modules/primer-support/lib/mixins/misc";
+
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/primer-base/lib/base";
+@import "../../node_modules/primer-base/lib/typography-base";
+
+@import "../../node_modules/primer-utilities/lib/border";
+@import "../../node_modules/primer-utilities/lib/colors";
+@import "../../node_modules/primer-utilities/lib/layout";
+@import "../../node_modules/primer-utilities/lib/margin";
+@import "../../node_modules/primer-utilities/lib/padding";
+@import "../../node_modules/primer-utilities/lib/typography";
+
+@import "../../node_modules/primer-forms/lib/form-control";
+@import "../../node_modules/primer-forms/lib/form-select";
+@import "../../node_modules/primer-forms/lib/form-group";
+@import "../../node_modules/primer-forms/lib/form-validation";
+
+@import "../../node_modules/primer-layout/lib/container";
+@import "../../node_modules/primer-layout/lib/columns";
+@import "../../node_modules/primer-layout/lib/grid";
+
+@import "../../node_modules/primer-buttons/lib/button";
+@import "../../node_modules/primer-buttons/lib/button-group";
+
+@import "../../node_modules/primer-alerts/lib/flash";
+
+@import "../../node_modules/primer-avatars/lib/avatar";
+@import "../../node_modules/primer-avatars/lib/avatar-parent-child";
+@import "../../node_modules/primer-avatars/lib/avatar-stack";
+
+@import "../../node_modules/primer-blankslate/lib/blankslate";
+
+@import "../../node_modules/primer-navigation/lib/counter";
+@import "../../node_modules/primer-navigation/lib/menu";
+@import "../../node_modules/primer-navigation/lib/tabnav";
+@import "../../node_modules/primer-navigation/lib/filter-list";
+@import "../../node_modules/primer-navigation/lib/subnav";
+
+@import "../../node_modules/primer-states/lib/states";
+@import "../../node_modules/primer-tooltips/lib/tooltips";
+
+@import "../../node_modules/primer-markdown/lib/markdown-body";
+@import "../../node_modules/primer-markdown/lib/headings";
+@import "../../node_modules/primer-markdown/lib/lists";
+@import "../../node_modules/primer-markdown/lib/tables";
+@import "../../node_modules/primer-markdown/lib/images";
+@import "../../node_modules/primer-markdown/lib/code";
+
+@import "../../node_modules/primer-flex-table/lib/flex-table";
+
+@import "../../node_modules/primer-truncate/lib/truncate";

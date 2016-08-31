@@ -6,9 +6,12 @@
   <body>
 
     {% include navbar.html %}
-    
+
     <div class="container">
       <div class="columns docs-layout">
+        <div class="one-fourth column">
+          {% include sidenav.html %}
+        </div>
         <div class="three-fourths column markdown-body">
           <h1 class="page-title">
             {{ page.title }}
@@ -20,5 +23,6 @@
       </div>
       {% include footer.html %}
     </div>
+    
   </body>
 </html>

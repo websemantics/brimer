@@ -1,0 +1,55 @@
+/*!
+ * Brimer Docs (http://getbootstrap.com)
+ * Copyright 2011-2016 The Bootstrap Authors
+ * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2016 Web Semantics, Inc.
+ * Licensed under the Creative Commons Attribution 3.0 Unported License. For
+ * details, see https://creativecommons.org/licenses/by/3.0/.
+ */
+
+// Dev notes
+//
+// Background information on nomenclature and architecture decisions here.
+//
+// - Bootstrap variables and mixins are included for easy reuse.
+//   Doing so gives us access to the same core utilities provided by Bootstrap.
+//   For example, consistent media queries through those mixins.
+//
+// - Bootstrap's **docs variables** are prefixed with `$br-`.
+//   These custom colors avoid collision with the components Bootstrap provides.
+//
+// - Classes are prefixed with `.bd-`.
+//   These classes indicate custom-built or modified components for the design
+//   and layout of the Bootstrap docs. They are not included in our builds.
+//
+// Happy Bootstrapping!
+
+// Load Bootstrap variables and mixins
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+// Local docs variables
+// Flat colors: http://www.flatdesigncolors.com/
+// Color calculator: http://razorjam.github.io/sasscolourfunctioncalculator/
+
+$br-brand: #4078c0;
+$br-red-color: #E25041;
+
+body {
+    font-family: "Helvetica Neue",Helvetica,arial, nimbussansl,liberationsans,freesans,clean,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+}
+
+.container {
+    width: auto;
+    max-width: 1020px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+// Load docs components
+@import "brand";
+@import "navbar";
+@import "jumbotron";
+@import "content";
+@import "footer";

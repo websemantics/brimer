@@ -2,8 +2,11 @@
 // Brand guidelines
 //
 
-.brand-item {
-  display: inline-block;
-  float: left;
-  font-size: 1.5rem;
+.masthead {
+  .masthead-logo {
+    img {
+      margin-right: 4px;
+      vertical-align: text-bottom;
+    }
+  }
 }

@@ -1,0 +1,15 @@
+<div class="menu docs-menu">
+  {% for p in site.pages %}
+    {% if p.layout == "docs" and p.group == "components" %}
+      <a href="{{ site.baseurl }}{{ p.url }}index.html" class="menu-item {% if p.title == page.title %}selected{% endif %}">{{ p.title }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+<br/>
+<div class="menu docs-menu">
+  {% for p in site.pages %}
+    {% if p.layout == "docs" and p.group == "extra" %}
+    <a href="{{ site.baseurl }}{{ p.url }}index.html" class="menu-item {% if p.title == page.title %}selected{% endif %}">{{ p.title }}</a>
+    {% endif %}
+  {% endfor %}
+</div>

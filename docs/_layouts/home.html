@@ -3,15 +3,12 @@
   <head>
     {% include header.html %}
   </head>
-  <body data-spy="scroll">
-
+  <body>
     {% include navbar.html %}
     {% include jumbotron.html %}
-
-    <div id="content">
-        {{ content }}
-    </div>
-
-    {% include footer.html %}
+    {{ content }}
+    <div class="container">
+      {% include footer.html %}
+    </div>    
   </body>
 </html>
