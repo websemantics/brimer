@@ -1,20 +1,22 @@
 ```
-        __________
-       /_________/      ______        _
-      /\        /\      | ___ \      (_)   
-     /  \  ____/__\__   | |_/ / _ __  _  _ __ ___    ___  _ __
-    /    \/_________/   | ___ \| '__|| || '_ ` _ \  / _ \| '__|    
-    \    /         /    | |_/ /| |   | || | | | | ||  __/| |   
-     \  /         /     |____/ |_|   |_||_| |_| |_| \___||_|   
+                ______ Style Goodies
+               /
+              /
+        _____/____      ______        _
+       /____/____/      | ___ \      (_)    
+      /\   ☌    /\      | |_/ / _ __  _  _ __ ___    ___  _ __
+     /  \  ____/__\__   | ___ \| '__|| || '_ ` _ \  / _ \| '__|    
+    /    \/_________/   | |_/ /| |   | || | | | | ||  __/| |   
+    \    /         /    |____/ |_|   |_||_| |_| |_| \___||_|   
+     \  /         /     
       \/_________/      Github Primer CSS toolkit with a 'B'
 
 ```
 
-> Brimer is a CSS Framework built after [Primer](http://primercss.io/), GitHub’s internal CSS framework. The idea is to have a cake and eat it too by combining Github attractive clean style and Bootstrap extensive feature list. A marriage made in heaven!
+> Brimer is a CSS Framework built after [Primer](http://primercss.io/), GitHub’s internal CSS framework. The idea is to have the cake and eat it too by combining Github attractive clean style and Bootstrap extensive feature list. A GitHubby marriage made in heaven!
 
 ### [Brimer](http://websemantics.github.io/brimer)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/brimer/issues)
 
-> GitHubby who doesn't love Github look and feel.
 
 ## Quick Start
 
