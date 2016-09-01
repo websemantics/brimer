@@ -181,6 +181,13 @@ module.exports = function (grunt) {
     },
 
     copy: {
+      fonts: {
+        expand: true,
+        src: 'node_modules/octicons/build/font/**',
+        dest: 'dist/fonts',
+        flatten: true,
+        filter: 'isFile'
+      },
       docs: {
         expand: true,
         cwd: 'dist/',
@@ -374,10 +381,10 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['sass-compile', 'exec:postcss', 'cssmin:core', 'cssmin:docs']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
 
   // Default task.
-  grunt.registerTask('default', ['clean:dist', 'test']);
+  grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
 
   // Docs task.
   grunt.registerTask('docs-css', ['cssmin:docs', 'exec:postcss-docs']);

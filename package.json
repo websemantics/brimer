@@ -37,8 +37,7 @@
     },
     "dir": {
       "src": "./src/",
-      "dist": "./_gh_pages/",
-      "public": "./public/"
+      "dist": "./public/"
     }
   },
   "scripts": {
@@ -50,13 +49,11 @@
     "postcss-docs": "# (uncomment if have docs folder) postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/assets/css/docs.min.css && postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/examples/**/*.css",
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./node_modules/bootstrap/grunt/npm-shrinkwrap.json",
     "test": "npm run eslint && npm run jscs && grunt test",
-    "postdeploy": "rm -rf $npm_package_config_dir_public && mv $npm_package_config_dir_dist $npm_package_config_dir_public ",
     "deploy": "[ ${GH_TOKEN} ] && npm run deploy:travis -s || npm run deploy:local -s ",
     "deploy:local": "repository=$(echo $npm_package_repository_url | sed 's/.*+//') && cd $npm_package_config_dir_dist && git push --force --quiet $repository ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
     "deploy:travis": "cd $npm_package_config_dir_dist && git push --force --quiet \"https://${GH_TOKEN}@${GH_REF}\" ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
     "predeploy": "rm -rf $npm_package_config_dir_dist && npm run docs -s && cd $npm_package_config_dir_dist && git init && git config user.name $npm_package_config_deploy_name && git config user.email $npm_package_config_deploy_email && git add -A . && git commit -am \"$npm_package_config_deploy_message\" ",
-    "docs": "grunt prep-release",
-    "dev": "rm -rf $npm_package_config_dir_dist && rm -rf $npm_package_config_dir_public && npm run docs -s && mv $npm_package_config_dir_dist $npm_package_config_dir_public "
+    "docs": "grunt prep-release"
   },
   "style": "dist/css/brimer.css",
   "sass": "scss/brimer.scss",

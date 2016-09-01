@@ -26,6 +26,16 @@ $octicons-font-path: "../../../node_modules/octicons/build/fonts" !default;
   font-style: normal;
 }
 
+a {
+  color: $text-purple;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
 /**
  * Link placement and hover behavior.
  */
@@ -170,7 +180,7 @@ body {
 
   &:hover,
   &:active {
-    color: $text-blue;
+    color: $text-purple;
     background: $bg-white;
     border-color: $white;
     box-shadow: none;
@@ -187,7 +197,7 @@ body {
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  background-color: $bg-blue;
+  background-color: $bg-purple;
 
   a {
     color: rgba(255,255,255,.5);
@@ -256,7 +266,7 @@ body {
   margin-bottom: 3rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
-  background-color: $bg-blue;
+  background-color: $bg-purple;
   font-size: 1.25rem;
   color: $text-white;
   text-align: center;
