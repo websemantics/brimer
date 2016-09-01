@@ -10,8 +10,8 @@ source:           docs
 destination:      public
 host:             0.0.0.0
 port:             9001
-# baseurl:          https://websemantics.github.io/brimer
-baseurl:          http://brimer.dev
+baseurl:          https://websemantics.github.io/brimer
+# baseurl:          http://brimer.dev
 githuburl:        https://github.com/websemantics/brimer
 url:              https://websemantics.github.io/brimer
 encoding:         UTF-8

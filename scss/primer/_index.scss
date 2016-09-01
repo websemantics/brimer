@@ -7,6 +7,7 @@
 
 // variables
 @import "../../node_modules/primer-support/lib/variables";
+$octicons-font-path: "../fonts/" !default;
 
 // mixins
 @import "../../node_modules/primer-support/lib/mixins/typography";
@@ -49,7 +50,7 @@
 @import "../../node_modules/primer-navigation/lib/tabnav";
 @import "../../node_modules/primer-navigation/lib/filter-list";
 @import "../../node_modules/primer-navigation/lib/subnav";
-
+//
 @import "../../node_modules/primer-states/lib/states";
 @import "../../node_modules/primer-tooltips/lib/tooltips";
 
@@ -63,3 +64,6 @@
 @import "../../node_modules/primer-flex-table/lib/flex-table";
 
 @import "../../node_modules/primer-truncate/lib/truncate";
+
+@import "../../node_modules/octicons/lib/octicons";
+@import "../../node_modules/octicons/build/font/_octicons";

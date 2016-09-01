@@ -1,19 +1,12 @@
 /*
- * Primer documentation styles
+ * Brimer documentation styles
  * http://primercss.io
  *
  * Released under MIT license. Copyright 2015 GitHub, Inc.
  */
 
-//
-// Import Primer itself
-//
-
-@import "../../../scss/primer/index";
+@import "../../../node_modules/primer-support/lib/variables";
 @import "brand";
-
-$octicons-font-path: "../../../node_modules/octicons/build/fonts" !default;
-@import "../../../node_modules/octicons/lib/octicons";
 
 /**
  * Store the link icon as a base64 embedded icon font.
@@ -186,7 +179,6 @@ body {
     box-shadow: none;
   }
 }
-
 
 //
 // Site header
@@ -454,7 +446,10 @@ body {
 }
 
 .page-title + .markdown-body > p:first-child {
-  @extend .lead;
+  margin-bottom: 30px;
+  font-size: $h3-size;
+  font-weight: $font-weight-light;
+  color: #555;
 }
 
 
@@ -466,7 +461,6 @@ body {
 #markdown-toc > li:first-child {
   display: none;
 }
-
 
 //
 // Branding colors
