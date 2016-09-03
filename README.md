@@ -18,7 +18,7 @@
 ### [Brimer](http://websemantics.github.io/brimer)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/brimer/issues)
 
 
-## Quick Start
+## Getting Started
 
 Three quick start options are available:
 
