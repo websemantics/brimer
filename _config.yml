@@ -7,18 +7,17 @@ permalink:        pretty
 
 # Server
 source:           docs
-destination:      public
+destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-baseurl:          https://websemantics.github.io/brimer
-# baseurl:          http://brimer.dev
-githuburl:        https://github.com/websemantics/brimer
-url:              https://websemantics.github.io/brimer
+name:             Brimer
+description:      Github Primer CSS toolkit with a 'B', built with Bootstrap 4
+baseurl:          /brimer
 encoding:         UTF-8
 
 gems:
   - jekyll-sitemap
 
 # Custom vars
-current_version:  1.0.0
+current_version:  1.0.1
 repo:             https://github.com/websemantics/brimer

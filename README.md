@@ -2,7 +2,7 @@
                 ______ CSS Goodies
                /
               /
-        _____/____         ______        _
+        _____/____          _____        _
        /____/____/         | ___ \      (_)    
       /\   ☌    /\         | |_/ / _ __  _  _ __ ___    ___  _ __
      /  \  ____/__\__      | ___ \| '__|| || '_ ` _ \  / _ \| '__|    
@@ -25,7 +25,7 @@ Three quick start options are available:
 - [Download the latest release](https://github.com/websemantics/brimer/archive/1.0.0.zip).
 - Clone the repo: `git clone https://github.com/websemantics/brimer.git`.
 - Install with [Bower](http://bower.io): `bower install brimer`.
-- Install with [nop](https://www.npmjs.com/): `npm install brimer`.
+- Install with [npm](https://www.npmjs.com/): `npm install brimer`.
 
 Run `npm install` to install dependencies.
 
@@ -61,9 +61,7 @@ brimer/
 │   │   |   └── docs.min.css.map
 │   |   ├── js
 │   |   └── scss
-|   ├── components.html
-|   ├── getting-started.html
-|   └── template.html
+|   └── index.html
 └── scss/
     └── primer
 
@@ -72,18 +70,22 @@ brimer/
 All css override styles for Bootstrap and Primer are stored in `scss` and `scss/primer` folders respectively, while compiled and minified CSS and JS are in `dist` folder.
 
 
-## Install
+## Screenshot
+
+[![Brimer](https://raw.githubusercontent.com/websemantics/brimer/master/docs/assets/img/brimer.png)](https://websemantics.github.io/brimer/)
+
+Love the Github *repository buttons* used and want to use them to showcase your own GitHub repositories? the name is Bragit, [Brag It](http://websemantics.github.io/bragit/).
 
 
 ## Resource
 
-[Primer](http://primercss.io/), the CSS toolkit and guidelines that power GitHub..
+[Primer](http://primercss.io/), The CSS toolkit and guidelines that power GitHub..
 
-[Bootstrap 4](http://v4-alpha.getbootstrap.com/), the most popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web.
+[Bootstrap 4](http://v4-alpha.getbootstrap.com/), The most popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web.
 
-[Themeblr](https://websemantics.github.io/themeblr/), a powerful CSS framework boilerplate and Bootstrap 4 themes builder .
+[Themeblr](https://websemantics.github.io/themeblr/), A powerful CSS framework boilerplate and Bootstrap 4 themes builder .
 
-[Bootstrap 4 Cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/), a quick reference for Bootstrap v4.0.0-alpha.3.
+[Bootstrap 4 Cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/), A quick reference for Bootstrap v4.0.0-alpha.3.
 
 
 ## Support
@@ -100,7 +102,7 @@ We are more than happy to accept external contributions to the project in the fo
 
 ## Credits
 
-This project was built using [Themeblr](https://websemantics.github.io/themeblr/), on top of the awesomeness known as [Bootstrap](https://github.com/twbs/bootstrap).
+This project was built using [Themeblr](https://websemantics.github.io/themeblr/), on top of the awesomeness known as [Bootstrap](https://github.com/twbs/bootstrap/).
 
 
 ## Copyright and license

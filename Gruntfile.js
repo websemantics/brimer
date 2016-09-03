@@ -183,7 +183,7 @@ module.exports = function (grunt) {
     copy: {
       fonts: {
         expand: true,
-        src: ['node_modules/octicons/build/font/**', '!**/*.css', '!**/*.scss'],
+        src: 'node_modules/font-awesome/fonts/**',
         dest: 'dist/fonts',
         flatten: true,
         filter: 'isFile'
@@ -248,11 +248,15 @@ module.exports = function (grunt) {
       },
       sass: {
         files: 'scss/**/*.scss',
-        tasks: ['dist-css', 'docs']
+        tasks: ['dist-css', 'docs', 'docs-github']
       },
       docs: {
         files: 'docs/assets/scss/**/*.scss',
-        tasks: ['dist-css', 'docs']
+        tasks: ['dist-css', 'docs', 'docs-github']
+      },
+      html: {
+        files: 'docs/**/*.html',
+        tasks: ['docs-github']
       }
     },
 
@@ -316,10 +320,29 @@ module.exports = function (grunt) {
           }
         ]
       }
+    },
+
+    browserSync: {
+      default_options: {
+        bsFiles: {
+          src: [
+            "<%= pkg.config.dir.dist %>/dist/css/*.css",
+            "<%= pkg.config.dir.dist %>/assets/css/*.css",
+            "<%= pkg.config.dir.dist %>/dist/js/*.js",
+            "<%= pkg.config.dir.dist %>/assets/js/*.js",
+            "<%= pkg.config.dir.dist %>/*.html"
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: {
+            baseDir: "<%= pkg.config.dir.dist %>"
+          }
+        }
+      }
     }
 
   });
-
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies',
@@ -385,6 +408,9 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
+
+  // Watch all task.
+  grunt.registerTask('watch-all', ['browserSync', 'watch']);
 
   // Docs task.
   grunt.registerTask('docs-css', ['cssmin:docs', 'exec:postcss-docs']);

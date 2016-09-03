@@ -6,7 +6,11 @@
  */
 
 @import "../../../node_modules/primer-support/lib/variables";
+
+$bragit-color: #ECEEEF;
+
 @import "brand";
+@import "bragit";
 
 /**
  * Store the link icon as a base64 embedded icon font.

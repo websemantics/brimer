@@ -1,14 +1,15 @@
 {
   "name": "brimer",
   "description": "Github Primer CSS toolkit with a 'B', built with Bootstrap 4.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "css",
     "sass",
-    "mobile-first",
+    "github",
     "responsive",
     "front-end",
     "framework",
+    "primer",
     "web"
   ],
   "repository": {
@@ -37,11 +38,11 @@
     },
     "dir": {
       "src": "./src/",
-      "dist": "./public/"
+      "dist": "./_gh_pages/"
     }
   },
   "scripts": {
-    "change-version": "node node_modules/bootstrap/grunt/change-version.js",
+    "change-version": "node ./node_modules/bootstrap/grunt/change-version.js",
     "eslint": "eslint --config js/.eslintrc.json js/src && node_modules/bootstrap/",
     "jscs": "jscs --config=js/.jscsrc js/src js/tests/unit docs/assets/js/src grunt Gruntfile.js docs/assets/js/ie-emulation-modes-warning.js docs/assets/js/ie10-viewport-bug-workaround.js",
     "htmlhint": "htmlhint --config docs/.htmlhintrc $npm_package_config_dir_dist ",
@@ -52,8 +53,11 @@
     "deploy": "[ ${GH_TOKEN} ] && npm run deploy:travis -s || npm run deploy:local -s ",
     "deploy:local": "repository=$(echo $npm_package_repository_url | sed 's/.*+//') && cd $npm_package_config_dir_dist && git push --force --quiet $repository ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
     "deploy:travis": "cd $npm_package_config_dir_dist && git push --force --quiet \"https://${GH_TOKEN}@${GH_REF}\" ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
-    "predeploy": "rm -rf $npm_package_config_dir_dist && npm run docs -s && cd $npm_package_config_dir_dist && git init && git config user.name $npm_package_config_deploy_name && git config user.email $npm_package_config_deploy_email && git add -A . && git commit -am \"$npm_package_config_deploy_message\" ",
-    "docs": "grunt prep-release"
+    "predeploy": "rm -rf $npm_package_config_dir_dist && npm run prep-release -s && cd $npm_package_config_dir_dist && git init && git config user.name $npm_package_config_deploy_name && git config user.email $npm_package_config_deploy_email && git add -A . && git commit -am \"$npm_package_config_deploy_message\" ",
+    "rebrand": "node ./node_modules/bootstrap/grunt/change-version.js",
+    "prep-release": "grunt prep-release",
+    "watch": "grunt watch-all",
+    "build": "grunt"
   },
   "style": "dist/css/brimer.css",
   "sass": "scss/brimer.scss",
@@ -64,9 +68,9 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.3",
-    "jquery": "1.9.1 - 3",
     "octicons": "^4.3.0",
     "primer-css": "^4.1.0",
+    "jquery": "1.9.1 - 3",
     "tether": "^1.1.1"
   },
   "devDependencies": {
@@ -75,6 +79,7 @@
     "eslint": "^3.0.0",
     "grunt": "^1.0.1",
     "grunt-babel": "^5.0.3",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-build-control": "^0.7.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compress": "^1.1.0",

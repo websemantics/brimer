@@ -1,12 +1,18 @@
 <div class="jumbotron">
   <div class="container">
-    <h1>Brimer</h1>
-    <p>The CSS toolkit and guidelines that power GitHub built with Bootstrap 4.</p>
-    <a href="{{ site.baseurl }}/scaffolding/" class="btn btn-reverse">
-      Read the Docs
-    </a>&nbsp;&nbsp;
-    <a href="{{ site.githuburl }}/" class="btn btn-reverse">
-      Like on Github
+    <h1>{{ site.name }}</h1>
+    <p class="pb-2">{{ site.description }}</p>
+    <!-- Bragit, https://github.com/websemantics/bragit -->
+    <a class="ui labeled huge button github-websemantics-brimer-stars">
+        <div class="ui bragit huge button"> <i class="star icon"></i> Stars </div>
+        <div class="ui basic bragit left label"> <i class="spinner loading icon"></i> </div>
+    </a>
+    <a class="ui labeled huge button github-websemantics-brimer-issues">
+        <div class="ui bragit huge button"> <i class="info circle icon"></i> Issues </div>
+        <div class="ui basic bragit left label"> <i class="spinner loading icon"></i> </div>
+    </a>
+    <a class="ui huge button github-websemantics-brimer-download"> <i class="download icon"></i> Download </a>
+    <a class="ui huge button github-websemantics-brimer-github"> <i class="github icon"></i> Github </a>
     </a>
   </div>
 </div>

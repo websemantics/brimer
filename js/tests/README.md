@@ -1,8 +1,8 @@
-## How does Brimer's test suite work?
+## How does Themeblr's test suite work?
 
-Brimer uses [QUnit](http://api.qunitjs.com/), a powerful, easy-to-use JavaScript unit test framework. Each plugin has a file dedicated to its tests in `unit/<plugin-name>.js`.
+Themeblr uses [QUnit](http://api.qunitjs.com/), a powerful, easy-to-use JavaScript unit test framework. Each plugin has a file dedicated to its tests in `unit/<plugin-name>.js`.
 
-* `unit/` contains the unit test files for each Brimer plugin.
+* `unit/` contains the unit test files for each Themeblr plugin.
 * `vendor/` contains third-party testing-related code (QUnit and jQuery).
 * `visual/` contains "visual" tests which are run interactively in real browsers and require manual verification by humans.
 
