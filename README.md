@@ -72,7 +72,7 @@ All css override styles for Bootstrap and Primer are stored in `scss` and `scss/
 
 ## Screenshot
 
-[![Brimer](https://raw.githubusercontent.com/websemantics/brimer/master/docs/assets/img/brimer.png)](https://websemantics.github.io/brimer/)
+[![Brimer](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/brimer.png)](https://websemantics.github.io/brimer/)
 
 Love the Github *repository buttons* used and want to use them to showcase your own GitHub repositories? the name is Bragit, [Brag It](http://websemantics.github.io/bragit/).
 
