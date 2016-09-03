@@ -27,8 +27,6 @@ Three quick start options are available:
 - Install with [Bower](http://bower.io): `bower install brimer`.
 - Install with [npm](https://www.npmjs.com/): `npm install brimer`.
 
-Run `npm install` to install dependencies.
-
 
 ### What's included
 
