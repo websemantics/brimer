@@ -183,7 +183,7 @@ module.exports = function (grunt) {
     copy: {
       fonts: {
         expand: true,
-        src: 'node_modules/font-awesome/fonts/**',
+        src: ['node_modules/octicons/build/font/**', '!**/*.css', '!**/*.scss'],
         dest: 'dist/fonts',
         flatten: true,
         filter: 'isFile'

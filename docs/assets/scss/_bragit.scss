@@ -1,0 +1,32 @@
+//
+// Bragit guidelines
+// url,  https://github.com/websemantics/bragit
+//
+.jumbotron {
+  .ui {
+    &.button {
+      color: $bragit-color;
+      background-color: transparent;
+      box-shadow: 0 0 0 1px  $bragit-color inset;
+    }
+    &.labeled.button>.label {
+      color: $bragit-color;
+      background-color: transparent;
+      border-color: $bragit-color;
+    }
+    &.button:focus,
+    &.button:hover,
+    &.labeled.button>.label:focus,
+    &.labeled.button>.label:hover {
+      color: $purple;
+      background-color: $bragit-color;
+    }
+  }
+}
+.ui.labeled {
+  .ui.button {
+    .star.icon {
+      color: $status-pending;
+    }
+  }
+}
